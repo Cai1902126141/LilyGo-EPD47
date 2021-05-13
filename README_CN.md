@@ -62,7 +62,7 @@ AT+NAME = INK_047  //蓝牙名称，设置成功收到返回字符：OKsetNAME:I
 ### 2、EPS32 开发板固件  
  -  使用 ArduinoIED 打开  \examples\epd47_blue_waker_center\epd47_blue_waker_center.ino  
    
- -  **在编译之前请确认您的按钮引脚**，代码钟选用的按钮引脚为15  
+ -  **在编译之前请确认您的按钮引脚，代码中选用的按钮引脚为15**  
    
  -  选择正确的端口后即可编译上传,上传成功后，等待10秒左右,直至墨水屏闪屏显示以下文本  
 
