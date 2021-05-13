@@ -1,12 +1,12 @@
 # LilyGo-EPD47-HC08-PDM_MIC
 这是一个关于测试 HC08-PDM_MIC 低功耗蓝牙模组的Dome.  
 
-### 一、代码简介
+## 一、代码简介
 1、将 HC08-PDM_MIC 模组安装于一块 LilyGo-EPD47 水墨屏上,并将其休眠  
 2、通过另外一块 ESP32 随时唤醒正在休眠的 LilyGo-EPD47 发送需要显示的字符文本,并使其进入麦克风检测  
 3、当检测到有声音后再次进入休眠.按下定义的按钮可重复以上测试步骤.  
   
-### 二、硬件准备
+## 二、硬件准备
 1、HC08-PDM_MIC 蓝牙模组  
 2、USB 转 TTL 串口模块  
 3、LilyGo-EPD47  
@@ -16,7 +16,7 @@
 ![Hardware display](/images/1.jpg)  
   
   
-### 三、HC08 AT设置
+## 三、HC08 AT设置
 1、HC08 连接 USB 转 TTL 串口模块  
   
 +-----------------------+   
@@ -35,14 +35,14 @@ AT+MODE = 1        //一级节能模式（必要），设置成功收到返回�
 ![HC08-ATset](/images/ATset.jpg)  
   
   
-### 四、硬件安装
+## 四、硬件安装
 1、在 LilyGo-EPD47 上安装 HC08-PDM_MIC 模组  
 
 ![HC08install](/images/2.jpg)
 （注意：必须断电操作，否则有可能烧坏水墨屏ESP32模组）  
   
   
-### 五、烧录固件
+## 五、烧录固件
 1、LilyGo-EPD47 固件  
 用 ArduinoIED 打开 \examples\epd47_show\epd47_show.ino  
 **开发板选择请"TTGO T-Watch"**(否则会因为项目占用储存过大导致编译失败)  
@@ -62,7 +62,7 @@ AT+MODE = 1        //一级节能模式（必要），设置成功收到返回�
 "Please blow into the microphone"  
   
   
-### 六、测试步骤
+## 六、测试步骤
 1、 当水墨屏显示：“请对麦克风吹气”时，请对以下部件吹气 
   
 ![PDM_MIC](/images/6.jpg) 
@@ -78,11 +78,15 @@ AT+MODE = 1        //一级节能模式（必要），设置成功收到返回�
   
 ![ButtonPress](/images/8.jpg) 
   
+
+## 七、运行演示视频
+https://github.com/Cai1902126141/LilyGo-EPD47/blob/main/DemoVideo.mp4?raw=true  
   
-### 七、补充说明
+## 八、补充说明
 **1、HC-08模块任何拔插操作务必先断电！**  
 **2、HC-08模组必须设置为一级节能模式，否则程序无法休眠一级通讯，请确保AT指令设置成功**  
 3、测试前请确认HC-08麦克风模组与墨水屏插稳  
 4、如按下按钮后，墨水屏没有响应，可尝试按钮按大力按久一点，确保按钮触发  
 5、按钮唤醒水墨屏后，必须先完成麦克风测试步骤，否则会一直等待麦克风输入不会休眠  
+  
 
