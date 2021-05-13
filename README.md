@@ -5,7 +5,9 @@
 ## Introduction
 ### 1.This is a Dome about testing the HC08-PDM_MIC low energy Bluetooth module. 
    -  Install the HC08-PDM_MIC module on a LilyGo-EPD47 screen and put it to sleep  
+     
    -  Use another piece of ESP32 to wake up the sleeping LilyGo-EPD47 at any time, send the character text that needs to be displayed, and make it enter the microphone for detection  
+     
    -  When the sound is detected, it will go to sleep again. Press the defined button to repeat the above test steps.  
   
   
@@ -37,11 +39,15 @@
 |GND--------------GND|  
 +-----------------------+  
   
+  
 ### 2.Send AT command to set up Bluetooth module  
   
  - **AT+LED=0           //Turn off the LED,and return："OK+LED=0"**  
+  
  - **AT+NAME = INK_047  //Change Bluetooth name,and return："OKsetNAME:INK_047"**  
+   
  - **AT+MODE = 1**        //**Level 1 energy saving mode (required),and return："OK"**  
+  
   
 ![HC08-ATset](/images/ATset.jpg)  
   

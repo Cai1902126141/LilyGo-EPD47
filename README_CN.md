@@ -5,7 +5,9 @@
 ## 一、简介
 1、这是一个关于测试 HC08-PDM_MIC 低功耗蓝牙模组的Dome. 
  -  将 HC08-PDM_MIC 模组安装于一块 LilyGo-EPD47 水墨屏上,并将其休眠  
+   
  -  通过另外一块 ESP32 随时唤醒正在休眠的 LilyGo-EPD47 发送需要显示的字符文本,并使其进入麦克风检测  
+   
  -  当检测到有声音后再次进入休眠.按下定义的按钮可重复以上测试步骤.  
   
 ## 二、硬件准备
@@ -46,21 +48,24 @@ AT+NAME = INK_047  //蓝牙名称，设置成功收到返回字符：OKsetNAME:I
   
   
 ## 五、烧录固件
-1、LilyGo-EPD47 固件  
-用 ArduinoIED 打开 \examples\epd47_show\epd47_show.ino  
-**开发板选择请"TTGO T-Watch"**(否则会因为项目占用储存过大导致编译失败)  
-选择正确的端口后即可编译上传,上传成功后，等待片刻直至墨水屏显示以下文本即为成功  
+### 1、LilyGo-EPD47 固件  
+ -  用 ArduinoIED 打开 \examples\epd47_show\epd47_show.ino  
+   
+ -  **开发板选择请"TTGO T-Watch"**(否则会因为项目占用储存过大导致编译失败)  
+   
+ -  选择正确的端口后即可编译上传,上传成功后，等待片刻直至墨水屏显示以下文本即为成功  
   
 ![EPD47show1](/images/4.jpg)  
 "sleep began, wait for wake up"  
   
   
-2、EPS32 开发板固件  
-使用 ArduinoIED 打开  \examples\epd47_blue_waker_center\epd47_blue_waker_center.ino  
-**在编译之前请确认您的按钮引脚**，代码钟选用的按钮引脚为15  
-选择正确的端口后即可编译上传,上传成功后，等待10秒左右  
-直至墨水屏闪屏显示以下文本  
-  
+### 2、EPS32 开发板固件  
+ -  使用 ArduinoIED 打开  \examples\epd47_blue_waker_center\epd47_blue_waker_center.ino  
+   
+ -  **在编译之前请确认您的按钮引脚**，代码钟选用的按钮引脚为15  
+   
+ -  选择正确的端口后即可编译上传,上传成功后，等待10秒左右,直至墨水屏闪屏显示以下文本  
+
 ![EPD47show2](/images/5.jpg) 
 "Please blow into the microphone"  
   
