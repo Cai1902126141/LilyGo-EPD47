@@ -1,10 +1,12 @@
-# LilyGo-EPD47-HC08-PDM_MIC
-这是一个关于测试 HC08-PDM_MIC 低功耗蓝牙模组的Dome.  
+<h1 align = "center">🌟 LilyGo-EPD47-HC08-PDM_MIC-Test 🌟</h1>
+
+## **English | [中文](./README_CN.md)** 
 
 ## 一、简介
-1、将 HC08-PDM_MIC 模组安装于一块 LilyGo-EPD47 水墨屏上,并将其休眠  
-2、通过另外一块 ESP32 随时唤醒正在休眠的 LilyGo-EPD47 发送需要显示的字符文本,并使其进入麦克风检测  
-3、当检测到有声音后再次进入休眠.按下定义的按钮可重复以上测试步骤.  
+1、这是一个关于测试 HC08-PDM_MIC 低功耗蓝牙模组的Dome. 
+ -  将 HC08-PDM_MIC 模组安装于一块 LilyGo-EPD47 水墨屏上,并将其休眠  
+ -  通过另外一块 ESP32 随时唤醒正在休眠的 LilyGo-EPD47 发送需要显示的字符文本,并使其进入麦克风检测  
+ -  当检测到有声音后再次进入休眠.按下定义的按钮可重复以上测试步骤.  
   
 ## 二、硬件准备
 1、HC08-PDM_MIC 蓝牙模组  
