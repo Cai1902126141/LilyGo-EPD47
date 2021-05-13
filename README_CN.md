@@ -11,7 +11,7 @@
 4、ESP32 开发板
 5、FPC排线 6 Pin  
   
-![Hardware display](LilyGo-EPD47/images/1.jpg)  
+![Hardware display](/images/1.jpg)  
   
 ### 三、HC08 AT设置
 1、HC08 连接 USB 转 TTL 串口模块  
@@ -29,10 +29,10 @@ AT+LED=0           //关闭LED灯，设置成功收到返回字符：OK+LED=0
 AT+NAME = INK_047  //蓝牙名称，设置成功收到返回字符：OKsetNAME:INK_047  
 AT+MODE = 1        //一级节能模式（必要），设置成功收到返回字符：OK  
   
-![HC08-ATset](LilyGo-EPD47/images/ATset.jpg)  
+![HC08-ATset](/images/ATset.jpg)  
   
 ### 四、在 LilyGo-EPD47 上安装 HC08-PDM_MIC 模组
-![HC08install](LilyGo-EPD47/images/2.jpg)
+![HC08install](/images/2.jpg)
 （注意：必须断电操作，否则有可能烧坏水墨屏ESP32模组）  
   
 ### 五、
