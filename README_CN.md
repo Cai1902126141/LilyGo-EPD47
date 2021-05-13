@@ -1,6 +1,6 @@
 <h1 align = "center">🌟 LilyGo-EPD47-HC08-PDM_MIC-Test 🌟</h1>
 
-## **中文 | [English](./README.md)** 
+## **中文 | [English](./README_.md)** 
 
 ## 一、简介
 1、这是一个关于测试 HC08-PDM_MIC 低功耗蓝牙模组的Dome. 
