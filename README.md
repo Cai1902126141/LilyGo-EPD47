@@ -1,6 +1,6 @@
 <h1 align = "center">🌟 LilyGo-EPD47-HC08-PDM_MIC-Test 🌟</h1> 
 
-## **English | [中文](./README_CN.md)**  
+## **English | [中文](./README_CN .md)**  
   
 ## Introduction
 1.This is a Dome about testing the HC08-PDM_MIC low energy Bluetooth module. 
